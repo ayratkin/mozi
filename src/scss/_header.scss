@@ -1,0 +1,32 @@
+.navbar {
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu__item {
+        color: $grayColor;
+        margin-left: 60px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+
+        .menu__item-link {
+            text-decoration: none;
+        }
+    
+    .redhover:hover {
+        color: $redColor
+    }
+    
+    }
+
+
+}

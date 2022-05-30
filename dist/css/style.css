@@ -52,16 +52,60 @@ table {
 }
 
 @font-face {
-  font-family: Pushster;
-  font-display: swap;
-  src: url("../fonts/Pushster-Regular.woff2") format("woff2"), url("../fonts/Pushster-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Europe-regular";
+  src: url("../fonts/europe-normal.woff");
 }
+@font-face {
+  font-family: "Europe-bold";
+  src: url("../fonts/europe-bold.woff");
+}
+body {
+  font-family: "Europe-regular";
+  font-size: 16px;
+}
+
 .container {
-  max-width: 1140px;
+  max-width: 1105px;
   width: 100%;
   margin: 0 auto;
+}
+
+.btn {
+  background: #BF0830;
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 150%;
+}
+.btn:hover {
+  background: #d51a42;
+  transition: 0.3s all ease;
+}
+
+.navbar {
+  margin-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+}
+.menu .menu__item {
+  color: #484C63;
+  margin-left: 60px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.menu .menu__item .menu__item-link {
+  text-decoration: none;
+}
+.menu .menu__item .redhover:hover {
+  color: #BF0830;
 }
 
 * {

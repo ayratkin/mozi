@@ -1,8 +1,9 @@
 @font-face {
-                font-family: Pushster;
-                font-display: swap;
-                src: url("../fonts/Pushster-Regular.woff2") format("woff2"),
-                    url("../fonts/Pushster-Regular.woff") format("woff");
-                font-weight: 400;
-                font-style: normal;
-              }
+  font-family: "Europe-regular"; 
+  src: url('../fonts/europe-normal.woff');
+} 
+
+@font-face {
+  font-family: "Europe-bold"; 
+  src: url('../fonts/europe-bold.woff');
+} 

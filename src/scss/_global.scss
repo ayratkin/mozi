@@ -1,7 +1,26 @@
-// Container
+body {
+    font-family: 'Europe-regular';
+    font-size: 16px;
+}
+
 
 .container {
     max-width: $containerWidth + $containerPadding;
     width: 100%;
     margin: 0 auto;
+}
+
+// Красная кнопка
+.btn {
+    background: $redColor;
+    color: $whiteColor;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 150%;
+
+    &:hover {
+        background: #d51a42;
+        transition: 0.3s all ease;
+    }
 }
