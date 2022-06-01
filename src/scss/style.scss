@@ -3,25 +3,4 @@
 @import 'fonts';
 @import '_global';
 @import '_header';
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #ffffff;
-  h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    font-size: 60px;
-  }
-}
-
-.img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-}
+@import '_hero';

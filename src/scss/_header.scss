@@ -1,8 +1,16 @@
 .navbar {
-    margin-top: 31px;
+    margin-top: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .logo {
+        img {
+            @media (max-width: $breakPoint992) {
+                max-width: 150px;
+            }
+        }
+    }
 }
 
 .menu {
@@ -12,18 +20,27 @@
     }
 
     .menu__item {
+        display: flex;
+        align-items: center;
+        margin: auto 0;
         color: $grayColor;
         margin-left: 60px;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
 
+        @media (max-width: $breakPoint992) {
+            margin-left: 30px;
+            font-size: 16px;
+        }
+
         .menu__item-link {
             text-decoration: none;
         }
     
     .redhover:hover {
-        color: $redColor
+        color: $redColor;
+        transition: 0.2s all ease;
     }
     
     }
