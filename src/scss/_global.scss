@@ -5,9 +5,9 @@ body {
 
 
 .container {
-    max-width: $containerWidth + $containerPadding;
+    max-width: $containerWidth;
     width: 100%;
-    padding: $containerPadding;
+    padding: 2%;
     margin: 0 auto;
 }
 
