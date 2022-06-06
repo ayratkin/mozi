@@ -17,6 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 article, aside, details, figcaption, figure,
@@ -143,6 +144,11 @@ body {
     font-size: 16px;
   }
 }
+@media (max-width: 767.98px) {
+  .menu .menu__item {
+    display: none;
+  }
+}
 .menu .menu__item .menu__item-link {
   text-decoration: none;
 }
@@ -155,7 +161,6 @@ body {
   background: linear-gradient(252.91deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
   background-size: cover;
   background-position: center center;
-  width: 100vw;
 }
 
 .section__hero {
@@ -187,9 +192,9 @@ body {
   bottom: 0;
   right: 40px;
 }
-@media (max-width: 1339.98px) {
+@media (max-width: 1450px) {
   .section__hero .hero__img {
-    max-width: 650px;
+    max-width: 600px;
     right: 0px;
   }
 }
@@ -247,7 +252,7 @@ body {
   color: #484C63;
   margin-top: 32px;
 }
-@media (max-width: 1339.98px) {
+@media (max-width: 991.98px) {
   .hero__item-text {
     margin-top: 25px;
     text-align: center;
