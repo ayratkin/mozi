@@ -16,15 +16,15 @@
         }
 
         @media (max-width: $breakPoint992) {
-            padding: 75px 0 250px 0;
+            padding: 50px 0 370px 0;
         }
 
         @media (max-width: $breakPoint768) {
-            padding: 50px 0 250px 0;
+            padding: 0px 0 250px 0;
         }
 
         @media (max-width: $breakPoint480) {
-            padding: 25px 0 250px 0;
+            padding: 0px 0 220px 0;
         }
 
         .hero__img {
@@ -38,7 +38,12 @@
             }
 
             @media (max-width: $breakPoint992) {
-                max-width: 400px;
+                max-width: 500px;
+                right: 0px;
+            }
+
+            @media (max-width: $breakPoint768) {
+                max-width: 300px;
                 right: 0px;
             }
         }
@@ -47,17 +52,6 @@
 
 .hero {
     display: flex;
-
-
-    &_btn {
-        display: inline-block;
-        text-decoration: none;
-        margin-top: 20px;
-
-        &:last-child {
-            margin-left: 16px;
-        }
-    }
 
     // .hero__item
     &__item {
@@ -112,9 +106,39 @@
         }
     }
 
+    &_btn {
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 20px;
+
+        @media (max-width: $breakPoint480) {
+            display: flex;
+            justify-content: center;
+        }
+
+        &:last-child {
+            margin-left: 16px;
+
+            @media (max-width: $breakPoint480) {
+                margin-left: 0;
+            }
+        }
+    }
+
     // .hero__item-buttons
     &__item-buttons {
         margin-top: 20px;
+
+        @media (max-width: $breakPoint992) {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+        @media (max-width: $breakPoint480) {
+            flex-direction: column;
+            margin-top: 0;
+        }
     }
 
 }

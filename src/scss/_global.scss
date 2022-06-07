@@ -7,7 +7,7 @@ body {
 .container {
     max-width: $containerWidth;
     width: 100%;
-    padding: 2%;
+    padding: $containerPadding;
     margin: 0 auto;
 }
 
@@ -41,6 +41,10 @@ body {
     line-height: 150%;
     border: 1px solid $redColor;
     color: $redColor;
+
+    @media (max-width: $breakPoint992) {
+        padding: 12px 26px;
+    }
 
     &:hover {
         color: $whiteColor;
