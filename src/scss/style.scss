@@ -1,6 +1,13 @@
-@import '_reset';
-@import '_vars';
-@import 'fonts';
+// Global SCSS imports
+    @import 'fonts';
+    @import '_reset';
+    @import '_vars';
+
+
+// Sections SCSS files imports
+    @import '_header';
+    @import '_hero';
+    @import '_brands';
+
 @import '_global';
-@import '_header';
-@import '_hero';
+
