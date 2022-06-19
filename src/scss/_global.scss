@@ -62,13 +62,30 @@ body {
         padding: 40px 0;
     }
 
+    // .section__subtitle
+    &__subtitle {
+        margin-top: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: $grayColor;
+
+        &.subtitle__center {
+            text-align: center;
+        }
+    }
+
     &__title {
         font-style: normal;
         font-weight: 700;
-        font-size: 36px;
-        line-height: 57px;
+        font-size: 44px;
+        line-height: 62px;
         color: $blueColor;
-        text-align: center;
+
+        &.title-center {
+            text-align: center;
+        }
 
         @media (max-width: $breakPoint992) {
             font-size: 32px;
@@ -88,6 +105,8 @@ body {
         span {
             color: $redColor;
         }
+
+        
     }
 }
 

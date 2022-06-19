@@ -60,6 +60,111 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "Europe-regular";
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1065px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  background: #BF0830;
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 150%;
+}
+@media (max-width: 991.98px) {
+  .btn {
+    padding: 12px 26px;
+  }
+}
+.btn:hover {
+  background: #d51a42;
+  transition: 0.3s all ease;
+}
+
+.btn__outline {
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 150%;
+  border: 1px solid #BF0830;
+  color: #BF0830;
+}
+@media (max-width: 991.98px) {
+  .btn__outline {
+    padding: 12px 26px;
+  }
+}
+.btn__outline:hover {
+  color: #FFFFFF;
+  background-color: #BF0830;
+  transition: 0.3s all ease;
+}
+
+@media (max-width: 991.98px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+.section__subtitle {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #484C63;
+}
+.section__subtitle.subtitle__center {
+  text-align: center;
+}
+.section__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 62px;
+  color: #1A2578;
+}
+.section__title.title-center {
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  .section__title {
+    font-size: 32px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section__title {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 479.98px) {
+  .section__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.section__title span {
+  color: #BF0830;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -161,7 +266,7 @@ table {
   padding: 129px 0px 210px 0px;
   position: relative;
 }
-@media (max-width: 1339.98px) {
+@media (max-width: 1399.98px) {
   .section__hero {
     padding: 100px 0;
   }
@@ -289,6 +394,26 @@ table {
   padding: 101px 0 128px 0;
   border-bottom: 1px solid rgba(197, 203, 226, 0.5);
 }
+@media (max-width: 1399.98px) {
+  .section__brands {
+    padding: 80px 0 100px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .section__brands {
+    padding: 60px 0 80px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .section__brands {
+    padding: 50px 0 75px 0;
+  }
+}
+
+.section__title-brands {
+  font-size: 36px;
+  line-height: 57px;
+}
 
 .brands {
   display: flex;
@@ -301,7 +426,7 @@ table {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 767.98px) {
@@ -328,94 +453,119 @@ table {
   }
 }
 
-body {
-  font-family: "Europe-regular";
-  font-size: 16px;
+.section__products {
+  padding: 106px 0;
 }
-
-.container {
-  max-width: 1065px;
-  width: 100%;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.btn {
-  display: inline-block;
-  background: #BF0830;
-  color: #FFFFFF;
-  padding: 14px 32px;
-  border-radius: 6px;
-  font-size: 16px;
-  line-height: 150%;
-}
-@media (max-width: 991.98px) {
-  .btn {
-    padding: 12px 26px;
+@media (max-width: 1399.98px) {
+  .section__products {
+    padding-top: 50px;
   }
 }
-.btn:hover {
-  background: #d51a42;
-  transition: 0.3s all ease;
-}
 
-.btn__outline {
-  display: inline-block;
-  color: #FFFFFF;
-  padding: 14px 32px;
-  border-radius: 6px;
-  font-size: 16px;
-  line-height: 150%;
-  border: 1px solid #BF0830;
-  color: #BF0830;
+.products {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 97px;
 }
-@media (max-width: 991.98px) {
-  .btn__outline {
-    padding: 12px 26px;
-  }
-}
-.btn__outline:hover {
-  color: #FFFFFF;
-  background-color: #BF0830;
-  transition: 0.3s all ease;
-}
-
-@media (max-width: 991.98px) {
-  .section {
-    padding: 50px 0;
+@media (max-width: 1399.98px) {
+  .products {
+    margin-top: 50px;
   }
 }
 @media (max-width: 767.98px) {
-  .section {
-    padding: 40px 0;
+  .products {
+    flex-wrap: wrap;
+    gap: 0;
   }
 }
-.section__title {
+.products__item {
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.08);
+  border-radius: 8px;
+  padding: 10px 10px 0 10px;
+}
+@media (max-width: 767.98px) {
+  .products__item {
+    flex: 0 0 100%;
+    margin-top: 25px;
+  }
+}
+.products__item-content {
+  padding: 62px 62px 0px 62px;
+}
+@media (max-width: 1399.98px) {
+  .products__item-content {
+    padding: 40px 40px 0 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .products__item-content {
+    padding: 30px 30px 0 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .products__item-logo img {
+    max-width: 150px;
+  }
+}
+.products__item-text {
+  margin-top: 40px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 57px;
-  color: #1A2578;
-  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
 }
-@media (max-width: 991.98px) {
-  .section__title {
-    font-size: 32px;
-    line-height: 50px;
+@media (max-width: 1399.98px) {
+  .products__item-text {
+    margin-top: 25px;
+    font-size: 22px;
   }
 }
 @media (max-width: 767.98px) {
-  .section__title {
-    font-size: 26px;
-    line-height: 42px;
+  .products__item-text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 130%;
   }
 }
-@media (max-width: 479.98px) {
-  .section__title {
-    font-size: 24px;
-    line-height: 30px;
+.products__item-btn {
+  display: inline-flex;
+  padding: 12px 24px;
+  margin-top: 33px;
+  text-decoration: none;
+  gap: 9px;
+}
+@media (max-width: 767.98px) {
+  .products__item-btn {
+    margin-top: 25px;
+    padding: 12px 18px;
   }
 }
-.section__title span {
-  color: #BF0830;
+.products__item-btn .item-btn__arrow {
+  z-index: 1000;
+  padding-top: 3px;
+  color: white;
+}
+.products__item-btn:hover path {
+  stroke: #FFFFFF;
+  transition: 0.3s all ease;
+}
+.products__item-btn .btn__text {
+  padding-top: 3px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  font-weight: bold;
+}
+.products__item-footer {
+  margin-top: auto;
+}
+.products__item-footer img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: -3px;
 }

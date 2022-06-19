@@ -3,11 +3,13 @@
     @import '_reset';
     @import '_vars';
 
+    @import '_global';
 
 // Sections SCSS files imports
     @import '_header';
     @import '_hero';
     @import '_brands';
+    @import './HomePage/_product-lines';
 
-@import '_global';
+
 
