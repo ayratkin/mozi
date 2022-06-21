@@ -132,11 +132,22 @@
     &__item-footer {
         margin-top: auto;
 
+        @media (max-width: $breakPoint768) {
+            // display: flex;
+        }
+
         img {
             max-width: 100%;
             width: 100%;
             height: auto;
             margin-bottom: -3px;
+
+            @media (max-width: $breakPoint768) {
+                display: block;
+                max-width: 75%;
+                width: 75%; 
+                margin-left: auto;
+            }
         }
     }
 
