@@ -1,0 +1,55 @@
+.section__awards {
+    background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+    padding: 256px 0px 256px 0px;
+    position: relative;
+
+    @media(max-width: $breakPoint1400) {
+        padding: 150px 0px 150px 0px;
+    }
+
+    @media(max-width: $breakPoint992) {
+        padding: 100px 0px 100px 0px;
+    }
+
+    @media(max-width: $breakPoint768) {
+        padding: 50px 0px 10px 0px;
+    }
+}
+.section__content {
+    max-width: 416px;
+
+    @media(max-width: $breakPoint768) {
+        max-width: 100%;
+    }
+}
+
+.section__image {
+    position: absolute;
+    top: 73px;
+    right: 10%;
+
+    @media(max-width: $breakPoint1400) {
+        width: 400px
+    }
+
+    @media(max-width: $breakPoint992) {
+        top: 40px;
+        width: 350px;
+        right: 2%
+    }
+
+    @media(max-width: $breakPoint768) {
+        width: 250px;
+        position: static;
+        display: block;
+        padding-top: 15px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+.awards__title, .awards__subtitle {
+    @media(max-width: $breakPoint768) {
+        text-align: center;
+    }
+}
