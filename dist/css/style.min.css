@@ -130,7 +130,7 @@ body {
   line-height: 27px;
   color: #484C63;
 }
-.section__subtitle.subtitle__center {
+.section__subtitle.subtitle-center {
   text-align: center;
 }
 .section__title {
@@ -489,6 +489,12 @@ body {
     padding-top: 50px;
   }
 }
+@media (max-width: 479.98px) {
+  .section__products {
+    padding: 40px 0;
+    padding-top: 50px;
+  }
+}
 
 .products {
   display: flex;
@@ -626,6 +632,11 @@ body {
     padding: 50px 0px 10px 0px;
   }
 }
+@media (max-width: 767.98px) {
+  .section__awards {
+    padding: 25px 0px 10px 0px;
+  }
+}
 
 .section__content {
   max-width: 416px;
@@ -655,10 +666,10 @@ body {
 }
 @media (max-width: 767.98px) {
   .section__image {
-    width: 250px;
+    width: 220px;
     position: static;
     display: block;
-    padding-top: 15px;
+    padding-top: 30px;
     margin-left: auto;
     margin-right: 0;
   }
@@ -668,4 +679,8 @@ body {
   .awards__title, .awards__subtitle {
     text-align: center;
   }
+}
+
+.brands-section {
+  padding-top: 120px;
 }
