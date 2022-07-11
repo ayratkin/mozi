@@ -56,11 +56,11 @@
 }
 
 
-// Стили для высветившегося на весь экран адаптивного меню 
+// Burger menu styles
 
 @media (max-width: $breakPoint768) {
 
-    // Поведение кнопки-бургера
+    // Burger menu button
 
     .hamburger-lines {
         display: block;
