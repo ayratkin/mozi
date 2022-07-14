@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/head.html', {
+    @@include('html/head.html', {
     'title': 'Главная'
-  })
+    })
 
-  <body>
+    <body>
 
     <div class="hero__wrapper">
-      <!-- Header -->
-      @@include('html/header.html')
+        <!-- Header -->
+        @@include('html/header.html')
 
-      <!-- Hero Section-->
-      @@include('html/MainPage/_hero.html')
+        <!-- Section hero-->
+        @@include('html/MainPage/_hero.html')
     </div>
 
-    <!-- Brands Section-->
+    <!-- Section with brands-->
     @@include('html/_brands.html')
-      
-    <!-- Product lines Section-->
-    @@include('html/MainPage/_product-lines.html')
 
-    <!-- Our awards Section -->
+    <!-- Section with awards -->
     @@include('html/MainPage/_awards.html')
 
-    <!-- Our partners Section -->
-    @@include('html/MainPage/_partners.html')
-    
+    <!-- Section with product lines-->
+    @@include('html/MainPage/_product-lines.html')
+
+    <!-- Section with our partners  -->
+    <!-- @@include('html/MainPage/_partners.html') -->
+
+    <!-- Section with invite -->
+    @@include('html/MainPage/_invite.html')
+
+    <!-- Footer -->
+    @@include('html/footer.html')
+
     <script src="js/app.min.js"></script>
-  </body>
+    </body>
 </html> 

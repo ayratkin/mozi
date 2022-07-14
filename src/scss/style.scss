@@ -1,17 +1,19 @@
 // Global SCSS imports
     @import 'fonts';
-    @import '_reset';
-    @import '_vars';
+    @import 'reset';
+    @import 'vars';
 
-    @import '_global';
+    @import 'global';
 
 // Sections SCSS files imports
-    @import '_header';
+    @import 'header';
+    @import 'footer';
     @import '_hero';
     @import '_brands';
     @import './HomePage/_product-lines';
-    @import './HomePage/awards';
+    @import './HomePage/_awards';
     @import './HomePage/_partners';
+    @import './HomePage/_invite';
 
 
 

@@ -1,0 +1,74 @@
+.section__invite {
+    background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+    padding: 222px 0px 222px 0px;
+    position: relative;
+
+    @media(max-width: $breakPoint1400) {
+        padding: 150px 0px 150px 0px;
+    }
+
+    @media(max-width: $breakPoint992) {
+        padding: 100px 0px 100px 0px;
+    }
+
+    @media(max-width: $breakPoint768) {
+        padding: 50px 0px 10px 0px;
+    }
+
+    @media(max-width: $breakPoint768) {
+        padding: 25px 0px 10px 0px;
+    }
+
+}
+.section__content {
+    max-width: 416px;
+
+    @media(max-width: $breakPoint768) {
+        max-width: 100%;
+    }
+}
+
+.section__image {
+    position: absolute;
+    top: 73px;
+    right: 10%;
+
+    @media(max-width: $breakPoint1400) {
+        width: 400px
+    }
+
+    @media(max-width: $breakPoint992) {
+        top: 40px;
+        width: 350px;
+        right: 2%
+    }
+
+    @media(max-width: $breakPoint768) {
+        width: 220px;
+        position: static;
+        display: block;
+        padding-top: 30px;
+        // padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+}
+
+.invite__title, .invite__subtitle {
+
+    @media(max-width: $breakPoint768) {
+        text-align: center;
+    }
+}
+
+.section__btn {
+    margin-top: 23px;
+    background: none;
+
+    @media(max-width: $breakPoint768) {
+        display: block;
+        margin: 0 auto;
+        margin-top: 23px;
+    }
+}

@@ -73,6 +73,7 @@ body {
 }
 
 .btn {
+  box-sizing: border-box;
   display: inline-block;
   background: #BF0830;
   color: #FFFFFF;
@@ -284,6 +285,48 @@ body {
     transform: translateY(0);
   }
 }
+footer {
+  background: #0D123C;
+  color: white;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 35px;
+}
+.top-footer__desc-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 287px;
+}
+.top-footer__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+.top-footer__lists-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 97px;
+}
+.top-footer__list ul {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.top-footer__list ul a {
+  text-decoration: none;
+  color: white;
+}
+.top-footer__list:last-child ul {
+  display: flex;
+  flex-direction: row;
+}
+
 .hero__wrapper {
   background: linear-gradient(252.91deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
   background-size: cover;
@@ -683,4 +726,84 @@ body {
 
 .brands-section {
   padding-top: 120px;
+}
+.section__invite {
+  background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+  padding: 222px 0px 222px 0px;
+  position: relative;
+}
+@media (max-width: 1399.98px) {
+  .section__invite {
+    padding: 150px 0px 150px 0px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section__invite {
+    padding: 100px 0px 100px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section__invite {
+    padding: 50px 0px 10px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section__invite {
+    padding: 25px 0px 10px 0px;
+  }
+}
+
+.section__content {
+  max-width: 416px;
+}
+@media (max-width: 767.98px) {
+  .section__content {
+    max-width: 100%;
+  }
+}
+
+.section__image {
+  position: absolute;
+  top: 73px;
+  right: 10%;
+}
+@media (max-width: 1399.98px) {
+  .section__image {
+    width: 400px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section__image {
+    top: 40px;
+    width: 350px;
+    right: 2%;
+  }
+}
+@media (max-width: 767.98px) {
+  .section__image {
+    width: 220px;
+    position: static;
+    display: block;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .invite__title, .invite__subtitle {
+    text-align: center;
+  }
+}
+
+.section__btn {
+  margin-top: 23px;
+  background: none;
+}
+@media (max-width: 767.98px) {
+  .section__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 23px;
+  }
 }
