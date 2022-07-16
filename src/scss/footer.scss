@@ -1,27 +1,63 @@
 footer {
     background: #0D123C;
     color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
 }
 
 .top-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 35px;
+    border-bottom: 1px solid rgba(197, 203, 226, 0.5);
 
+    &__title {
+        text-align: center;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 35px;
+
+        @media (max-width: $breakPoint992) {
+            padding-top: 10px;
+        }
+
+        @media (max-width: $breakPoint480) {
+            flex-direction: column;
+            padding-top: 0px;
+            align-items: center
+        }
+    }
+    
     // .top-footer__desc-wrapper
     &__desc-wrapper {
         display: flex;
         flex-direction: column;
         gap: 25px;
         max-width: 287px;
+
+        @media (max-width: $breakPoint768) {
+            max-width: 245px;
+        }
+
+        
+        @media (max-width: $breakPoint480) {
+            gap: 5px;
+            max-width: 100%;
+            align-items: center
+        }
+
+        p {
+    
+            @media (max-width: $breakPoint480) {
+                text-align: center;
+            }
+        }
     }
 
     // .top-footer__desc
     &__desc {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 27px;
     }
 
     // .top-footer__lists-wrapper
@@ -29,6 +65,18 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 97px;
+
+        @media (max-width: $breakPoint992) {
+            gap: 50px;
+        }
+
+        @media (max-width: $breakPoint768) {
+            gap: 45px;
+        }
+
+        @media (max-width: $breakPoint480) {
+            margin-top: 25px;
+        }
     }
 
     // .top-footer__list
@@ -40,18 +88,54 @@ footer {
             flex-direction: column;
             gap: 21px;
 
+            
+            @media (max-width: $breakPoint480) {
+                margin-top: 10px;
+            }
+
             a {
                 text-decoration: none;
                 color: white;
             }
         }
+
     }
 
     &__list:last-child ul {
         display: flex;
         flex-direction: row;
     }
+
+    &__list:nth-child(-n+2) {
+        @media (max-width: $breakPoint768) {
+            display: none;
+        }
+    }
 }
 
 .bottom-footer {
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (max-width: $breakPoint480) {
+            flex-direction: column;
+            align-items: center
+        }
+    }
+    
+    // .bottom-footer__desc
+    &__desc {
+    }
+
+    // .bottom-footer__terms
+    &__terms {
+
+        a {
+            color: white;
+        }
+    }
+
 }
