@@ -296,8 +296,10 @@ footer {
 .top-footer {
   border-bottom: 1px solid rgba(197, 203, 226, 0.5);
 }
-.top-footer__title {
-  text-align: center;
+@media (max-width: 479.98px) {
+  .top-footer__title {
+    text-align: center;
+  }
 }
 .top-footer__body {
   display: flex;
