@@ -5,15 +5,18 @@
 
     @import 'global';
 
-// Sections SCSS files imports
+// Global components
     @import 'header';
     @import 'footer';
-    @import '_hero';
-    @import '_brands';
+
+// Main Page sections
+    @import './HomePage/_hero';
+    @import './HomePage/_brands';
     @import './HomePage/_product-lines';
     @import './HomePage/_awards';
     @import './HomePage/_partners';
     @import './HomePage/_invite';
 
-
+// Products page sections
+    @import './ProductsPage/_products-hero'
 

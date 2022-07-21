@@ -1,0 +1,144 @@
+.hero__wrapper {
+    background: linear-gradient(252.91deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+    background-size: cover;
+    background-position: center center;
+}
+
+.products-section {
+
+    // .section__hero
+    &__hero {
+        padding: 129px 0px 210px 0px;
+        position: relative;
+
+        @media (max-width: $breakPoint1400) {
+            padding: 100px 0;
+        }
+
+        @media (max-width: $breakPoint992) {
+            padding: 50px 0 370px 0;
+        }
+
+        @media (max-width: $breakPoint768) {
+            padding: 0px 0 250px 0;
+        }
+
+        @media (max-width: $breakPoint480) {
+            padding: 0px 0 220px 0;
+        }
+
+        .hero__img {
+            position: absolute;
+            bottom: 0;
+            right: 40px;
+
+            @media (max-width: 1450px) {
+                max-width: 600px;
+                right: 0px;
+            }
+
+            @media (max-width: $breakPoint992) {
+                max-width: 500px;
+                right: 0px;
+            }
+
+            @media (max-width: $breakPoint768) {
+                max-width: 300px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+.hero {
+    display: flex;
+
+    // .hero__item
+    &__item {
+        flex: 0 1 50%;
+        @media (max-width: $breakPoint992) {
+            flex: 1 1 100%;
+        }
+        
+    }
+
+    // .hero__item-title
+    &__item-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 62px;
+        color: $blueColor;
+
+        @media (max-width: $breakPoint992) {
+            font-size: 38px;
+            line-height: 48px;
+            text-align: center;
+        }
+
+        @media (max-width: $breakPoint768) {
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+
+    // .hero__item-text
+    &__item-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        color: $grayColor;
+        margin-top: 32px;
+
+        @media (max-width: $breakPoint1400) {
+        }
+
+        @media (max-width: $breakPoint992) {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        @media (max-width: $breakPoint768) {
+        }
+
+        @media (max-width: $breakPoint480) {
+        }
+    }
+
+    &_btn {
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 20px;
+
+        @media (max-width: $breakPoint480) {
+            display: flex;
+            justify-content: center;
+        }
+
+        &:last-child {
+            margin-left: 16px;
+
+            @media (max-width: $breakPoint480) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    // .hero__item-buttons
+    &__item-buttons {
+        margin-top: 20px;
+
+        @media (max-width: $breakPoint992) {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+        @media (max-width: $breakPoint480) {
+            flex-direction: column;
+            margin-top: 0;
+        }
+    }
+
+}
