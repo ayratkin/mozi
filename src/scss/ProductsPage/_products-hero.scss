@@ -8,7 +8,7 @@
 
     // .section__hero
     &__hero {
-        padding: 129px 0px 210px 0px;
+        padding: 152px 0px 146px 0px;
         position: relative;
 
         @media (max-width: $breakPoint1400) {
@@ -30,20 +30,30 @@
         .hero__img {
             position: absolute;
             bottom: 0;
-            right: 40px;
+            right: 100px;
 
             @media (max-width: 1450px) {
                 max-width: 600px;
-                right: 0px;
+                right: 80px;
+            }
+
+            @media (max-width: 1300px) {
+                max-width: 500px;
+                right: 40px;
             }
 
             @media (max-width: $breakPoint992) {
-                max-width: 500px;
+                max-width: 450px;
                 right: 0px;
             }
 
             @media (max-width: $breakPoint768) {
                 max-width: 300px;
+                right: 0px;
+            }
+
+            @media (max-width: $breakPoint480) {
+                max-width: 275px;
                 right: 0px;
             }
         }
