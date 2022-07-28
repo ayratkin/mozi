@@ -1,0 +1,25 @@
+.invite-section {
+    padding: 137px 317px;
+
+    // .invite-section__wrapper
+    &__wrapper {
+        max-width: 878px;
+        margin: 0 auto;
+    }
+
+    // .invite-section__title
+    &__title {
+    }
+
+    // .invite-section__subtitle
+    &__subtitle {
+    }
+
+    // .invite-section__buttons
+    &__buttons {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}

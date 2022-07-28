@@ -21,6 +21,7 @@ body {
     border-radius: 6px;
     font-size: 16px;
     line-height: 150%;
+    text-decoration: none;
     
 
     @media (max-width: $breakPoint992) {
@@ -42,6 +43,8 @@ body {
     line-height: 150%;
     border: 1px solid $redColor;
     color: $redColor;
+    text-decoration: none;
+
 
     @media (max-width: $breakPoint992) {
         padding: 12px 26px;
@@ -76,7 +79,7 @@ body {
             text-align: center;
         }
     }
-
+    // .section__btitle
     &__title {
         font-style: normal;
         font-weight: 700;

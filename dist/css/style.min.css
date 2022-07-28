@@ -81,6 +81,7 @@ body {
   border-radius: 6px;
   font-size: 16px;
   line-height: 150%;
+  text-decoration: none;
 }
 @media (max-width: 991.98px) {
   .btn {
@@ -101,6 +102,7 @@ body {
   line-height: 150%;
   border: 1px solid #BF0830;
   color: #BF0830;
+  text-decoration: none;
 }
 @media (max-width: 991.98px) {
   .btn__outline {
@@ -1109,4 +1111,18 @@ footer {
 }
 .products-section .product-section__btn {
   margin-top: 23px;
+}
+
+.invite-section {
+  padding: 137px 317px;
+}
+.invite-section__wrapper {
+  max-width: 878px;
+  margin: 0 auto;
+}
+.invite-section__buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
