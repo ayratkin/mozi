@@ -1,6 +1,19 @@
 .invite-section {
-    padding: 137px 317px;
+    margin-top: 42px;
+    padding: 137px 0px;
 
+    @media(max-width: $breakPoint1400) {
+        padding: 60px 0px;
+    }
+
+    @media(max-width: $breakPoint992) {
+        padding: 30px 0px;
+    }
+
+    @media(max-width: $breakPoint768) {
+        margin-top: 00px;
+        padding: 0px;
+    }
     // .invite-section__wrapper
     &__wrapper {
         max-width: 878px;
