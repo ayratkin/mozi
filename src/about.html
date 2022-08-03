@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Our products'
+  })
+  <body>
+    <div class="main__wrapper">
+      @@include('html/header.html', {})
+
+      <!-- Section hero -->
+      @@include('html/AboutPage/_about.html', {})  
+    </div>
+
+  <!-- Section with products -->
+  @@include('html/AboutPage/_brands.html', {})
+
+    <!-- Section with statistic cards -->
+    @@include('html/AboutPage/_statistic-cards.html', {})
+
+  <!-- Footer -->
+  @@include('html/footer.html', {})
+
+  <script src="js/app.min.js"></script>
+  </body>
+</html> 

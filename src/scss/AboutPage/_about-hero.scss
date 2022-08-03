@@ -1,12 +1,11 @@
-.section {
+.about-section {
 
-    // .section__hero
     &__hero {
-        padding: 129px 0px 210px 0px;
+        padding: 186px 0px 212px 0px;
         position: relative;
 
         @media (max-width: $breakPoint1400) {
-            padding: 100px 0;
+            padding: 120px 0px 120px 0px;
         }
 
         @media (max-width: $breakPoint992) {
@@ -23,21 +22,31 @@
 
         .hero__img {
             position: absolute;
-            bottom: 0;
-            right: 40px;
+            bottom: 10px;
+            right: 150px;
 
             @media (max-width: 1450px) {
-                max-width: 600px;
-                right: 0px;
+                max-width: 500px;
+                right: 80px;
             }
 
+            // @media (max-width: 1300px) {
+            //     max-width: 500px;
+            //     right: 40px;
+            // }
+
             @media (max-width: $breakPoint992) {
-                max-width: 500px;
+                max-width: 400px;
                 right: 0px;
             }
 
             @media (max-width: $breakPoint768) {
-                max-width: 300px;
+                max-width: 250px;
+                right: 0px;
+            }
+
+            @media (max-width: $breakPoint480) {
+                max-width: 225px;
                 right: 0px;
             }
         }
@@ -49,9 +58,10 @@
 
     // .hero__item
     &__item {
-        flex: 0 1 50%;
+        max-width: 390px;
+
         @media (max-width: $breakPoint992) {
-            flex: 1 1 100%;
+            max-width: 100%;
         }
         
     }

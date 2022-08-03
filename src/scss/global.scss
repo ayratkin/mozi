@@ -11,6 +11,12 @@ body {
     margin: 0 auto;
 }
 
+.main__wrapper {
+    background: linear-gradient(252.91deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+    background-size: cover;
+    background-position: center center;
+}
+
 // Красная кнопка
 .btn {
     box-sizing: border-box;
