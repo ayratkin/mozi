@@ -45,6 +45,7 @@
 
         .menu__item-link {
             text-decoration: none;
+            color: $grayColor;
         }
     
     .redhover:hover {
@@ -134,12 +135,16 @@
             gap: 50px;
         }
 
+        .menu__item-link {
+            color: white;
+        }
+
         .menu__item {
             margin: 0;
             text-align: center;
 
             a {
-                color: white
+                color: white !important
             }
         }
     }
