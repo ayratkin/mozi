@@ -1,0 +1,142 @@
+.feedback-section {
+    padding: 82px 0px 175px 0px;
+
+    @media (max-width: $breakPoint992) {
+        padding: 40px 0px 10px 0px;
+    }
+
+    // .feedback-section__wrapper
+    &__wrapper {
+        display: flex;
+
+        @media (max-width: $breakPoint992) {
+            flex-direction: column;
+        }
+    }
+
+    // .feedback-section__item
+    &__item:first-child {
+        width: 539px;
+        padding: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+        border-radius: 8px;
+
+        @media (max-width: $breakPoint992) {
+            width: 100%;
+
+        }
+    }
+
+    &__cities {
+        width: 273px;
+    }
+}
+
+.contact-form {
+
+    // .contact-form__item
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    // .contact-form__title
+    &__title {
+        margin-bottom: 6px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.005em;
+        color: #8F90A6;
+    }
+
+    // .contact-form__input
+    &__input {
+        box-sizing: border-box;
+        width: 443px;
+        height: 60px;
+        background: #FFFFFF;
+        border: 1px solid #E3E7F6;
+        border-radius: 6px;
+        padding: 12px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.005em;
+        color: #000000;
+
+        &:focus {
+            outline: 1px solid red;
+        }
+
+        @media (max-width: $breakPoint992) {
+            width: 100%;
+        }
+    }
+}
+
+.feedback-section {
+
+    // .feedback-section__cities
+    &__cities {
+        margin-left: 122px;
+
+        @media (max-width: $breakPoint992) {
+            margin-left: 0px;
+            margin-top: 40px;
+            width: 100%;
+        }
+    }
+}
+
+.city {
+    margin-bottom: 72px;
+
+    // .city__title
+    &__title {
+        display: flex;
+        margin-bottom: 25px;
+
+        @media(max-width: $breakPoint992) {
+            justify-content: center;
+        }
+    }
+
+    // .city__flag
+    &__flag {
+    }
+
+    // .city__title-text
+    &__title-text {
+        margin-left: 20px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    // .city__descriptions-wrapper
+    &__descriptions-wrapper {
+    }
+
+    // .city__descriptions-text
+    &__descriptions-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+        
+        @media(max-width: $breakPoint992) {
+            text-align: center;
+        }
+    }
+
+    @media(max-width: $breakPoint992) {
+        margin-bottom: 30px;
+    }
+}
+

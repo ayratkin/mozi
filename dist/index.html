@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
   <title>Главная</title>
 </head>
@@ -24,7 +25,7 @@
             <ul>
                 <li class="menu__item"><a class="redhover menu__item-link"  href="../products.html">Products</a></li>
                 <li class="menu__item"><a class="redhover menu__item-link" href="../about.html">About us</a></li>
-                <li class="menu__item"><a class="redhover menu__item-link" href="">Contact</a></li>
+                <li class="menu__item"><a class="redhover menu__item-link" href="../contact.html">Contact</a></li>
                 <li class="menu__item"><a class="btn menu__item-link" href="../products.html">We're hiring</a></li>
             </ul>
         </nav>
@@ -89,17 +90,6 @@
     </div>
 </section>
 
-    <!-- Section with awards -->
-    <section class="section section__awards">
-    <div class="container">
-        <div class="section__content">
-            <h3 class="section__title awards__title">Creators of award-winning products</h3>
-            <h4 class="section__subtitle awards__subtitle">Our products are loved by customers and recommended by leading industry experts.</h4>
-            <img class="section__image" src="../../images/awards.svg" alt="our-awards">    
-        </div>
-    </div>
-</section>
-
     <!-- Section with product lines-->
     <section class="section section__products">
     <div class="container">
@@ -160,8 +150,85 @@
     </div>
 </section>
 
+    <!-- Section with awards -->
+    <section class="section section__awards">
+    <div class="container">
+        <div class="section__content">
+            <h3 class="section__title awards__title">Creators of award-winning products</h3>
+            <h4 class="section__subtitle awards__subtitle">Our products are loved by customers and recommended by leading industry experts.</h4>
+            <img class="section__image" src="../../images/awards.svg" alt="our-awards">    
+        </div>
+    </div>
+</section>
+
     <!-- Section with our partners  -->
-    
+    <div class="container">
+    <section class="section brands-section">
+        <div class="brands-section__text">
+            <h3 class="section__title title-center brands-section__title">Making waves with innovation</h3>
+            <h4 class="section__subtitle subtitle-center brands-section__subtitle">We are in the news for being market
+                leaders who deliver exceptional products.</h4>
+        </div>
+
+        <!-- Slider -->
+        <!-- Slider main container -->
+        <div class="image-slider swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="image-slider__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="../../images/slide1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="../../images/slide2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="../../images/slide3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="../../images/slide4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="../../images/slide5.png" alt="">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="../../images/slide6.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="image-slider__buttons">
+                <div class="image-slider__button-prev">
+                    <img src="../../images/left-to-right-arrow.svg" alt="">
+                </div>
+                <div class="image-slider__button-next">
+                    <img src="../../images/left-to-right-arrow.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
 
     <!-- Section with invite -->
     <section class="section section__invite">
@@ -233,6 +300,7 @@
 </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
     </body>
 </html> 

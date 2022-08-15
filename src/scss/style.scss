@@ -9,6 +9,9 @@
     @import 'header';
     @import 'footer';
 
+// Other components 
+    @import 'swiper';
+
 // Main Page sections
     @import './HomePage/_hero';
     @import './HomePage/_brands';
@@ -22,10 +25,15 @@
     @import './ProductsPage/_products';
     @import './ProductsPage/_invite';
 
-// About page section
+// About page sections
     @import './AboutPage/_about-hero';
     @import './AboutPage/_brands';
-    @import './AboutPage/_statistic-cards'
+    @import './AboutPage/_statistic-cards';
+
+// Contact page sections
+    @import './ContactPage/_contact-hero';
+    @import './ContactPage/_feedback';
+    
     
 
 
