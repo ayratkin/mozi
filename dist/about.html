@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <script src="../wow.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  
   <title>Our products</title>
 </head>
   <body>
@@ -83,34 +92,81 @@
     </div>
 </section>
 
-    <!-- Section with statistic cards -->
-    <section class="section statistic-cards-section">
+  <!-- Section with statistic cards -->
+  <section class="section statistic-cards-section">
     <div class="container">
         <div class="statistic-cards-section__wrapper">
-            <div class="card">
-                <div class="card__title"><p>2017</p></div>
-                <div class="card__subtitle"><p>Founded in</p></div>
-                <img src="../../images/card1.svg" alt="card picture" class="card__img">        
+            <div class="statistic-card">
+                <div class="statistic-card__title"><p>2017</p></div>
+                <div class="statistic-card__subtitle"><p>Founded in</p></div>
+                <img src="../../images/card1.svg" alt="card picture" class="statistic-card__img">        
             </div>
 
-            <div class="card">
-                <div class="card__title"><p>44+</p></div>
-                <div class="card__subtitle"><p>Employees</p></div>
-                <img src="../../images/card2.svg" alt="card picture" class="card__img">        
+            <div class="statistic-card">
+                <div class="statistic-card__title"><p>44+</p></div>
+                <div class="statistic-card__subtitle"><p>Employees</p></div>
+                <img src="../../images/card2.svg" alt="card picture" class="statistic-card__img">        
             </div>
 
-            <div class="card">
-                <div class="card__title"><p>1.3M+</p></div>
-                <div class="card__subtitle"><p>Active users</p></div>
-                <img src="../../images/card3.svg" alt="card picture" class="card__img">        
+            <div class="statistic-card">
+                <div class="statistic-card__title"><p>1.3M+</p></div>
+                <div class="statistic-card__subtitle"><p>Active users</p></div>
+                <img src="../../images/card3.svg" alt="card picture" class="statistic-card__img">        
             </div>
         </div>
     </div>
 </section>
 
+  <!-- Section about culture -->
+  <section class="section culture-section">
+    <h3 class="culture-section__title section__title title-center">Our culture code </h3>
+    <h4 class="culture-section__subtitle section__subtitle subtitle-center">The values that drive Mozilorians every day.</h4>
+    
+    <!-- Cards from global styles-->
+    <div class="culture-section__cards-wrapper">
+      <div class="card">
+        <p class="card__title">Integrity</p>
+        <p class="card__text">We value people who live by a 
+          strong moral code and act with uncompromising honesty in everything they do.
+          </p>
+      </div>
+
+      <div class="card">
+        <p class="card__title">Accountability</p>
+        <p class="card__text">We take ownership of everything we do, including our mistakes. We learn from them so that we can make better mistakes next time.
+          </p>
+      </div>
+
+      <div class="card">
+        <p class="card__title">Humility</p>
+        <p class="card__text">We value curiosity to learn from anyone, anywhere and the openness to acknowledge differences.
+          </p>
+      </div>
+
+      <div class="card">
+        <p class="card__title">Autonomy</p>
+        <p class="card__text">We insist on individuality and care for the goals we achieve, not the procedures or ceremony in getting there. 
+          </p>
+      </div>
+
+      <div class="card">
+        <p class="card__title">Conscientiousness</p>
+        <p class="card__text">We seek to be principled and reliable so that we can always provide value for everyone around us.
+          </p>
+      </div>
+
+    
+    <div class="card">
+      <p class="card__title">Contribution</p>
+      <p class="card__text">We actively look for opportunities to give back to our team and the world around us.
+        </p>
+    </div>
+  </div>
+</section>
+
   <!-- Footer -->
-  <footer class="footer">
-    <div class="top-footer">
+  <footer class="footer ">
+    <div class="top-footer wow animate__animated animate__fadeInUp">
         <div class="container">
             <div class="top-footer__body">
                 <div class="top-footer__desc-wrapper">
@@ -126,7 +182,7 @@
                             <li><a href="#">Webtoffee</a></li>
                         </ul>
                     </div>
-
+ 
                     <div class="top-footer__list">
                         <p class="top-footer__title">About</p>
                         <ul>
@@ -151,7 +207,7 @@
         </div>
     </div>
 
-    <div class="bottom-footer">
+    <div class="bottom-footer wow animate__animated animate__fadeInUp">
         <div class="container">
             <div class="bottom-footer__body">
                 <div class="bottom-footer__desc">

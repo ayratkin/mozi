@@ -82,7 +82,7 @@ body {
   box-sizing: border-box;
   display: inline-block;
   background: #BF0830;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   padding: 14px 32px;
   border-radius: 6px;
   font-size: 16px;
@@ -210,6 +210,7 @@ body {
 }
 .menu .menu__item .menu__item-link {
   text-decoration: none;
+  color: #484C63;
 }
 .menu .menu__item .redhover:hover {
   color: #BF0830;
@@ -280,12 +281,15 @@ body {
     flex-direction: column;
     gap: 50px;
   }
+  .menu .menu__item-link {
+    color: white;
+  }
   .menu .menu__item {
     margin: 0;
     text-align: center;
   }
   .menu .menu__item a {
-    color: white;
+    color: white !important;
   }
 
   .menu.menu_active {
@@ -1377,15 +1381,29 @@ footer {
   }
 }
 
+.statistic-cards-section {
+  margin-bottom: 63px;
+}
+@media (max-width: 991.98px) {
+  .statistic-cards-section {
+    margin-bottom: 0px;
+  }
+}
 .statistic-cards-section__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 32px;
+  margin: -16px;
+}
+@media (max-width: 991.98px) {
+  .statistic-cards-section__wrapper {
+    flex-wrap: wrap;
+  }
 }
 
-.card {
-  max-width: 316px;
+.statistic-card {
+  margin: 16px;
+  width: 316px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1393,7 +1411,12 @@ footer {
   box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
   border-radius: 8px;
 }
-.card__title {
+@media (max-width: 479.98px) {
+  .statistic-card {
+    width: 100%;
+  }
+}
+.statistic-card__title {
   margin-top: 53px;
   font-style: normal;
   font-weight: bold;
@@ -1401,7 +1424,7 @@ footer {
   line-height: 62px;
   color: #1A2578;
 }
-.card__subtitle {
+.statistic-card__subtitle {
   margin-top: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1409,11 +1432,48 @@ footer {
   line-height: 33px;
   margin-bottom: 12px;
 }
-.card__img {
+.statistic-card__img {
   margin-top: auto;
   max-width: 100%;
   width: 100%;
   height: auto;
+}
+
+.culture-section {
+  background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+  display: flex;
+  flex-direction: column;
+}
+.culture-section__title {
+  margin-top: 65px;
+}
+.culture-section__cards-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 97px;
+}
+
+.card {
+  margin: 18px;
+  max-width: 345px;
+  padding: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+  border-radius: 8px;
+}
+.card__title {
+  font-size: 28px;
+  line-height: 31px;
+}
+.card__text {
+  margin-top: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 .contact-section__hero {
