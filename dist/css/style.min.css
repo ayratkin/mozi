@@ -1320,7 +1320,6 @@ footer {
 
 .section__brands {
   padding: 101px 0 128px 0;
-  border-bottom: none;
 }
 @media (max-width: 1399.98px) {
   .section__brands {
@@ -1336,6 +1335,10 @@ footer {
   .section__brands {
     padding: 50px 0 50px 0;
   }
+}
+
+.about-page__brands {
+  border-bottom: none;
 }
 
 .section__title-brands {
