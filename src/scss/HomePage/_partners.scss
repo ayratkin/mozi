@@ -1,5 +1,15 @@
-.brands-section {
+.partners-section {
     padding-top: 120px;
+
+    @media(max-width: $breakPoint992) {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    @media(max-width: $breakPoint480) {
+        padding-bottom: 10px;
+    }
+
     // .brands-section__text
 
     &__text {
@@ -16,30 +26,11 @@
     }
 }
 
-.slider {
-
-    // .slider__track
-
-    &__track {
-    }
-
-    // .slider__item
-
-    &__item {
-    }
-
-    // .slider__dots
-
-    &__dots {
-    }
-
-    // .slider__prev-btn
-
-    &__prev-btn {
-    }
-
-    // .slider__next-btn
-
-    &__next-btn {
+// Slider
+.swiper-container {
+    margin-top: 113px;
+    
+    @media(max-width: $breakPoint992) {
+        margin-top: 50px;
     }
 }
